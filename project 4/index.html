@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>لندینگ الهام‌گرفته از نتفلیکس</title>
+  <meta name="description" content="تماشای بی‌وقفه فیلم و سریال با کیفیت عالی. هر زمان بخواهید ببینید، هر لحظه بخواهید لغو کنید." />
+
+  <!-- فونت فارسی Vazirmatn (آزاد و بهینه برای فارسی) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./style.css" />
+  <script defer src="index.js"></script>
+</head>
+<body>
+  <!-- سربرگ -->
+  <header class="header">
+    <div class="container header__inner">
+      <!-- نکته: برای رعایت حقوق برند از لوگوی رسمی استفاده نکردم؛ نام برند را عوض کن -->
+      <a href="#" class="brand" aria-label="خانه">N-Stream</a>
+
+      <nav class="nav">
+        <select class="lang-select" aria-label="انتخاب زبان">
+          <option value="fa" selected>فارسی</option>
+          <option value="en">English</option>
+        </select>
+        <a class="btn btn--ghost" href="#">ورود</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- هیرو -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <h1 class="hero__title">تماشای بی‌وقفه فیلم و سریال</h1>
+        <p class="hero__subtitle">هرجا تماشا کنید. هر زمان بخواهید لغو کنید.</p>
+        <p class="hero__hint">برای شروع، ایمیل‌تان را وارد کنید.</p>
+
+        <form class="email-form" novalidate>
+          <label class="sr-only" for="email-hero">ایمیل</label>
+          <input id="email-hero" name="email" type="email" dir="ltr" placeholder="you@example.com" required />
+          <button type="submit" class="btn btn--primary">شروع تماشا</button>
+          <p class="form-error" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ویژگی‌ها -->
+    <section class="section">
+      <div class="container">
+        <!-- ویژگی ۱: تماشا روی تلویزیون -->
+        <div class="feature">
+          <div class="feature__text">
+            <h2>روی تلویزیون تماشا کنید</h2>
+            <p>با تلویزیون‌های هوشمند، کنسول‌ها و رایانه‌ها برنامه‌ها را با کیفیت عالی پخش کنید.</p>
+          </div>
+          <div class="feature__visual">
+            <div class="device device--tv">
+              <video class="device__screen" src="https://cdn.coverr.co/videos/coverr-popcorn-7326/1080p.mp4" autoplay muted loop playsinline></video>
+              <div class="device__stand" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ویژگی ۲: دانلود روی موبایل -->
+        <div class="feature feature--reverse">
+          <div class="feature__text">
+            <h2>دانلود کنید و آفلاین ببینید</h2>
+            <p>محتوا را روی موبایل ذخیره کنید تا هرجا بدون اینترنت تماشا کنید.</p>
+          </div>
+          <div class="feature__visual">
+            <div class="device device--phone">
+              <img class="device__screen-img" alt="پوستر محتوا" src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?q=80&w=1200&auto=format&fit=crop" />
+              <div class="download-card">
+                <div class="download-card__thumb"></div>
+                <div class="download-card__meta">
+                  <strong>دانلود در حال انجام</strong>
+                  <span>45%</span>
+                </div>
+                <div class="download-card__spinner" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ویژگی ۳: پروفایل کودک -->
+        <div class="feature">
+          <div class="feature__text">
+            <h2>فضای امن برای کودکان</h2>
+            <p>پروفایل مخصوص کودک با کنترل والدین تا با خیال راحت تماشا کنند.</p>
+          </div>
+          <div class="feature__visual">
+            <div class="kids-card">
+              <svg width="180" height="120" viewBox="0 0 180 120" aria-hidden="true">
+                <circle cx="60" cy="60" r="36" fill="#ffd166"/>
+                <circle cx="120" cy="60" r="36" fill="#06d6a0"/>
+                <circle cx="52" cy="54" r="5" fill="#333"/>
+                <circle cx="68" cy="54" r="5" fill="#333"/>
+                <path d="M50 70 Q60 80 70 70" stroke="#333" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <circle cx="112" cy="54" r="5" fill="#0f0f0f"/>
+                <circle cx="128" cy="54" r="5" fill="#0f0f0f"/>
+                <path d="M110 72 Q120 62 130 72" stroke="#0f0f0f" stroke-width="3" fill="none" stroke-linecap="round"/>
+              </svg>
+              <p>محتوای منتخب برای سنین پایین</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq">
+      <div class="container">
+        <h2 class="section__title">سوالات متداول</h2>
+
+        <!-- از details برای سادگی و دسترسی‌پذیری -->
+        <div class="faq__list">
+          <details>
+            <summary><span>هزینه اشتراک چقدر است؟</span><svg class="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <div class="faq__content">
+              <p>پلن‌ها متنوع‌اند و بسته به کیفیت و تعداد دستگاه‌ها قیمت متفاوتی دارند. هر زمان بخواهید می‌توانید پلن را تغییر دهید یا لغو کنید.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary><span>چطور می‌توانم لغو کنم؟</span><svg class="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <div class="faq__content">
+              <p>از بخش حساب کاربری می‌توانید تنها با چند کلیک اشتراک را لغو کنید. هیچ هزینه پنهانی وجود ندارد.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary><span>کجا می‌توانم تماشا کنم؟</span><svg class="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <div class="faq__content">
+              <p>روی تلویزیون‌های هوشمند، موبایل، تبلت، لپ‌تاپ و کنسول‌ها. کافیست وارد حساب‌تان شوید و پخش را شروع کنید.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary><span>آیا برای کودکان مناسب است؟</span><svg class="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <div class="faq__content">
+              <p>بله. با پروفایل کودک و کنترل والدین، دسترسی به محتوای مناسب سن مدیریت می‌شود.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- CTA تکرار -->
+        <div class="faq__cta">
+          <p>آماده‌اید تماشا را شروع کنید؟ ایمیل‌تان را وارد کنید.</p>
+          <form class="email-form" novalidate>
+            <label class="sr-only" for="email-faq">ایمیل</label>
+            <input id="email-faq" name="email" type="email" dir="ltr" placeholder="you@example.com" required />
+            <button type="submit" class="btn btn--primary">شروع</button>
+            <p class="form-error" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- پابرگ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__call">سوالی دارید؟ با ما تماس بگیرید.</p>
+      <div class="footer__grid">
+        <a href="#">سوالات متداول</a>
+        <a href="#">مرکز کمک</a>
+        <a href="#">حساب کاربری</a>
+        <a href="#">حریم خصوصی</a>
+        <a href="#">شرایط استفاده</a>
+        <a href="#">تنظیمات کوکی</a>
+        <a href="#">اطلاعات شرکت</a>
+        <a href="#">تماس با ما</a>
+      </div>
+      <div class="footer__bottom">
+        <select class="lang-select" aria-label="انتخاب زبان پابرگ">
+          <option value="fa" selected>فارسی</option>
+          <option value="en">English</option>
+        </select>
+        <span class="footer__brand-note">این یک نمونه‌ی آموزشی الهام‌گرفته از نتفلیکس است.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
